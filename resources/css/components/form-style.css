@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.form-registration-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.form-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 523px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 10px 30px 0px rgba(133, 143, 164, 0.10);
+    position: relative;
+}
+.button-close{
+    position: absolute;
+    right: 42px;
+    top: 27px;
+    font-size: 32px;
+    color: #384255;
+}
+.header-form {
+    margin-top: 60px;
+}
+
+.type-user {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.user {
+    padding: 12px 20px 13px 20px;
+    border-radius: 4px;
+    background: #F53B49;
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+}
+
+.bisnes-user {
+    padding: 12px 20px 13px 20px;
+    border-radius: 4px;
+    border: 1px solid rgba(144, 156, 181, 0.70);
+    background: #FFF;
+    color: #384255;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.header-form h1 {
+    color: #1A1A25;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+}
+
+.form-registration-inputs-block {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    align-items: center;
+    outline: none;
+}
+
+.form-registration-inputs-block input {
+    height: 50px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    border: 1px solid rgba(144, 156, 181, 0.30);
+    background: #F6F6F6;
+    width: 80%;
+    outline: none;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+
+}
+
+.buttons-form-registration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 21px;
+    row-gap: 12px;
+}
+
+.buttons-form-registration a {
+    color: #909CB5;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+
+}
+
+.button-submit {
+    width: 180px;
+    padding: 12px 20px 13px 20px;
+    border-radius: 4px;
+    background: #F53B49;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+}

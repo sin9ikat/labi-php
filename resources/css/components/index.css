@@ -1,0 +1,707 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.body {
+    margin: 0;
+}
+
+
+.header-line {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(37, 73, 31, 0.31);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(5px)
+
+}
+.header {
+
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: -10%;
+
+
+}
+.glav-img{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 16px;
+    width: 600px;
+
+}
+
+
+.menu-item {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+
+}
+
+.menu-item:after {
+    content: "";
+    display: flex;
+    right: 0;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: #FFDF9E; /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.menu-item:hover:after {
+    content: "";
+    width: 100%;
+
+    display: flex;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: rgb(184, 214, 113); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+/* картинка и текст в шапке */
+.phone-number {
+    display: flex;
+}
+
+.number {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    color: #FFDF9E;
+    line-height: 16px;
+    margin-left: 8px;
+    transition: 1s; /* Время эффекта */
+    text-align: center;
+}
+
+.number:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+.cart {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    color: #FFDF9E;
+    line-height: 16px;
+    margin-left: 8px;
+    transition: 1s; /* Время эффекта */
+    text-align: center;
+}
+
+.cart:hover {
+    transform: scale(1.2); /* Увеличиваем масштаб */
+}
+
+/* картинка и текст с кнопкой*/
+
+.kalendar {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+.logotip {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logotip:hover {
+    transform: scale(1.1);
+}
+
+.zaya {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4%;
+    padding-left: 15%;
+}
+
+.text-zaya {
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    font-variant: small-caps;
+    font-feature-settings: 'numr' on, 'dnom' on;
+    mix-blend-mode: screen;
+    text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.4);
+    width: 438px;
+    height: 96px;
+}
+.img-sv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10%;
+    height: 125px;
+}
+.img-sv:hover {
+    transform: scale(1.1);
+}
+.rap {
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-between;
+}
+.knopka-zaya {
+    display: flex;
+    padding: 13px;
+}
+
+
+.preimuschestvo {
+    display: flex;
+    justify-content: space-around;
+    margin: 12%;
+    height: 122px;
+    background: rgba(33, 26, 21, 0.87);
+    border-radius: 5px;
+}
+
+.preimuschestvo-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.preimuschestvo-item1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+.preimuschestvo-item2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+}
+.preimuschestvo-item3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px;
+
+}
+
+.preimuschestvo-item {
+    text-align: end;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFDF9E;
+}
+
+.img-drevo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -9%;
+}
+
+.Company {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 12%;
+    padding-right: 3%;
+    height: 266px;
+    background: rgba(87, 82, 73, 0.98);
+    border-radius: 5px;
+    margin-bottom: -13%;
+}
+
+.company-text1 {
+    padding-left: 5%;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #FFDF9E;
+}
+
+.company-text2 {
+
+    padding-left: 5%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #FFDF9E;
+
+}
+
+.proect {
+    display: flex;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #34642C;
+}
+
+.kustik {
+    display: flex;
+    justify-content: center;
+    margin-top: -11%;
+    margin-bottom: -5%;
+}
+
+.png-proecti {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+
+}
+
+.two-pro {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.pravdinskoe {
+    display: flex;
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+
+.pravdinskoe:hover {
+    filter: blur(0); /* Отменяем размытие */
+}
+
+.repino {
+    display: flex;
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+
+.repino:hover {
+    filter: blur(0); /* Отменяем размытие */
+}
+
+.petergof {
+    display: flex;
+    filter: blur(5px); /* Размытие изображения */
+    transition: 1s; /* Время перехода */
+}
+.petergof:hover {
+    filter: blur(0); /* Отменяем размытие */
+
+}
+
+/* 3 часть сайта */
+
+.str3 {
+
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.uhod {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -12%;
+}
+
+
+.str3-4-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 12%;
+    padding-right: 3%;
+    width: 1058px;
+    height: 107px;
+    background: rgba(57, 54, 47, 0.8);
+    border-radius: 5px;
+    margin-bottom: -2%;
+}
+.str3-4-text {
+    display: flex;
+    align-items: center;
+    width: 1024px;
+    height: 106px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: justify;
+    letter-spacing: 0.1em;
+    color: #FFDF9E;
+}
+
+/* табы на js*/
+div {
+    box-sizing: border-box;
+    transition: all ease-in-out .5s;
+    -moz-transition: all ease-in-out .5s;
+    -webkit-transition: all ease-in-out .5s;
+}
+.icetab {
+    border: 1px solid #FFDF9E;
+    display: inline-block;
+    border-bottom: 0px;
+    margin: 0px;
+    color: #fff;
+    cursor: pointer;
+    border-right: 0px;
+}
+.icetab:last-child {
+    border-right: 2px solid #FFDF9E;
+}
+
+#icetab-content {
+    overflow: hidden;
+    position: relative;
+    border-top: 2px solid #FFDF9E;
+}
+
+
+.tabcontent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #fff;
+    width: 100%;
+    height: 100%; /*уесжает вниз*/
+    border-top: 0px;
+    border: 2px solid #FFDF9E;
+    border-top: 0px;
+    transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+}
+
+.tabcontent:first-child {
+    position: relative;
+}
+.tabcontent.tab-active {
+    border-top: 0px;
+    display: block;
+    transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+}
+
+.codepen-container {
+    max-width: 1090px;
+    margin: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tabcontent {
+    padding: 225px;
+}
+
+.icetab {
+    padding: 39.4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.current-tab {
+    background: #ff9900;
+}
+
+/* ландшафт-разделитель */
+.landshaft {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+    margin-bottom: -8%;
+}
+
+/* ландшафт картинки */
+.landflex {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.landshaft-png {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.land-item1 {
+    grid-column-start:2;
+    grid-row-end: 5;
+}
+
+.landshaft-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+/* разделитель */
+.img-drevo2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+    margin-bottom: -9%;
+}
+
+.text-drevo1 {
+    margin-top: 1%;
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #34642C;
+}
+
+/* мнение */
+.otzivflex {
+    display: flex;
+    justify-content: center;
+}
+.otziv {
+    margin-top: 13%;
+    display: grid;
+    grid-template-columns:   350px 350px 350px;
+    row-gap: 25px;
+    column-gap: 25px;
+
+}
+
+.otziv-png {
+    align-self: center;
+    justify-self: center;
+}
+
+.otziv-name {
+    align-self: center;
+    justify-self: center;
+}
+
+.otziv-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: justify;
+    color: #34642C;
+}
+
+
+/* Подвал */
+.footer {
+    margin-top: 10%;
+}
+.trava {
+
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.footer2 {
+    display: flex;
+    justify-content: center;
+}
+
+.footer1 {
+    display: grid;
+    grid-template-columns:  350px 350px 350px;
+    row-gap: 25px;
+    column-gap: 25px;
+    margin-top: 4%;
+    margin-bottom: 15%;
+}
+
+.footer-img {
+    display: grid;
+    grid-template-columns:  60px 60px 60px;
+    grid-column-start: 3;
+    grid-row-end: 1;
+}
+
+.footer-img:hover {
+    transform: scale(1.1);
+}
+
+.footer-text1 {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    color: #ffffff;
+}
+
+.footer-text2 {
+    grid-column-start: 1;
+    grid-row-end: 2;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+}
+
+.footer-text3 {
+    grid-column-start: 2;
+    grid-row-end: 2;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+
+}
+
+.footer-location {
+    display: flex;
+    align-items: flex-end;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    grid-column-start: 3;
+    grid-row-end: 2;
+}
+
+.footer-location-png {
+    margin-right: 5%;
+}
+
+.razrabotano {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 16px;
+    text-align: justify;
+    color: #5A554D;
+}
+/* количество времени проведенного на сайте */
+.time-tuta {
+    display: flex;
+    justify-content: center;
+    color: #5A554D;
+    font-size: 18px;
+    font-family: 'Roboto';
+    font-style: normal;
+}
+
+/* кнопка наверх */
+.go-top {
+    position: fixed; /* фиксированное позиционирование */
+    left: 95%; /* отступ слева 20px */
+    top: 90%; /* выравниваем по центру */
+    transform: translateY(-50%); /* выравниваем по центру */
+    cursor: pointer; /* при наведении меняем курсор */
+    display: none; /* по умолчанию скрываем кнопку */
+    font-size: 20px;
+    color: rgba(23, 186, 88, 0.5);
+    border: 1px solid rgba(13, 172, 98, 0.5);
+    background-color: rgba(69, 118, 88, 0.334);
+    padding: 15px 10px;
+}
+
+/* меняем прозрачность при наведении мышкой */
+.go-top:hover {
+    color: rgb(20, 245, 8);
+    border: 1px solid rgba(20, 186, 94, 0.8);
+    background-color: rgba(25, 148, 74, 0.348);
+}
+
+/* модификатор для отображения кнопки */
+.go-top--show {
+    display: flex;
+}
+
+/* Оставить заявку градиент */
+.knopka {
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;background: rgba(255, 126, 53, 0.53);
+    border: 2px solid #FF7E35; background: #f50b46;
+    padding: 25px 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25), inset 9px 9px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+
+    color: #FFDF9E;
+    text-shadow: 0px 7px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+
+
+}
+
+.knopka span {
+    position: relative;
+    pointer-events: none;
+}
+
+.knopka::before {
+    --size: 0;
+    content: '';
+    position: absolute;
+
+    width: var(--size);
+    height: var(--size);
+    background: radial-gradient(circle closest-side, #4510dc, rgba(255, 255, 255, 0));
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transition: width .1s ease, height .3s ease;
+}
+
+.knopka:hover::before {
+    --size: 397px;
+}
